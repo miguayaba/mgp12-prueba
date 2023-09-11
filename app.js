@@ -1,4 +1,14 @@
-const http = require('http');
+const http = require('https');
+
+process.on('unhandledRejection', (reason, promise) => {
+  console.error('Unhandled Rejection at:', promise, 'reason:', reason);
+  // Aquí puedes agregar código para manejar el error, como registrarlo o finalizar la aplicación.
+});
+
+process.on('uncaughtException', (error) => {
+  console.error('Uncaught Exception:', error);
+  // Aquí puedes agregar código para manejar el error, como registrarlo o finalizar la aplicación.
+});
 
 const servidor = http.createServer((req, res) => {
   res.writeHead(200, { 'Content-Type': 'text/plain' });
