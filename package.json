@@ -2,7 +2,7 @@
   "name": "mgpanel12-prueba",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
     "test": "node app.js"
   },
