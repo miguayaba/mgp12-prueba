@@ -17,6 +17,6 @@ const servidor = http.createServer((req, res) => {
 
 const direccion = '20.119.0.42'; // Escuchar en todas las interfaces de red
 
-servidor.listen(puerto, direccion, () => {
+servidor.listen(direccion, () => {
   console.log(`Servidor en funcionamiento en https://${direccion}`);
 });
