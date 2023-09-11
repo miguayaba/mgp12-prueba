@@ -15,7 +15,7 @@ const servidor = http.createServer((req, res) => {
   res.end('Hola Mundo Azure\n');
 });
 
-const puerto = 80; // Puerto 80 para HTTP
+const puerto = 8080; // Puerto 80 para HTTP
 const direccion = 'mgpanelv12.azurewebsites.net'; // Escuchar en todas las interfaces de red
 
 servidor.listen(puerto, direccion, () => {
