@@ -3,7 +3,7 @@ const app = express()
 const port = process.env.PORT || 3000
 
 app.get('/', (req, res) => {
-  res.send('Hola Wilmer desde Azure')
+  res.send('Hola Mundo desde Azure')
 })
 
 app.listen(port, () => {
